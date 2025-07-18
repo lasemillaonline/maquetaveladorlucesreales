@@ -73,14 +73,14 @@
 
     function turnOn() {
       lamp.classList.add('on');
-      fetch("http://186.182.162.88:8244/pin11") // Encender circuito real
+      fetch("https://186.182.162.88:8244/pin11") // Encender circuito real
         .then(response => console.log("Luz encendida"))
         .catch(error => console.error("Error al encender la luz:", error));
     }
 
     function turnOff() {
       lamp.classList.remove('on');
-      fetch("http://186.182.162.88:8244/pin10") // Apagar circuito real
+      fetch("https://186.182.162.88:8244/pin10") // Apagar circuito real
         .then(response => console.log("Luz apagada"))
         .catch(error => console.error("Error al apagar la luz:", error));
     }
